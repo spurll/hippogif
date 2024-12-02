@@ -7,10 +7,10 @@ from setuptools import setup
 setup(
     name='hippogif',
     packages=['hippogif'],
-    version='0.1',
+    version='0.2',
     description='Conversion of video files to GIF animations.',
-    url='https://github.com/spurll/imgii',
-    download_url='https://github.com/spurll/imgii/tarball/0.1',
+    url='https://github.com/spurll/hippogif',
+    download_url='https://github.com/spurll/hippogif/tarball/0.2',
     author='Gem Newman',
     author_email='spurll@gmail.com',
     license='MPL2',

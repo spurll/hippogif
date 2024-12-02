@@ -7,7 +7,7 @@
 
 from os.path import splitext
 from argparse import ArgumentParser, ArgumentTypeError
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 
 
 DEFAULT_SCALE = 1
@@ -20,10 +20,10 @@ def video_to_gif(
     if output_file is None:
         output_file = splitext(input_file)[0] + ".gif"
 
-    clip = VideoFileClip(input_file).subclip(start, end).resize(scale)
+    clip = VideoFileClip(input_file).subclipped(start, end).resized(scale)
 
     if crop:
-        clip = clip.crop(**crop)
+        clip = clip.cropped(**crop)
 
     clip.write_gif(output_file, fps=fps)
 

@@ -10,7 +10,7 @@ Usage
 Installation
 ------------
 
-Download the source and run `python3 setup.py install`.
+Download the source and run `./setup.py install`.
 
 Requirements
 ------------
@@ -78,7 +78,8 @@ Bugs and Feature Requests
 Feature Requests
 ----------------
 
-* Add support for overlaying text on the image
+* Add support for overlaying text on the image (requires ImageMagick, so likely
+  not worth it)
 
 Known Bugs
 ----------
